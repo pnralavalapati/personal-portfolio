@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My  portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfbae68693.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+
+
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack developer</p>
+                <h1>Hi, I'm <span>Pnr</span> <br>from Banglore</h1>
+
+            </div>
+        </div>
+
+    </div>
+    <!-------------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Dicta, cum ipsa beatae perferendis aperiam incidunt, iusto 
+                       sequi quisquam sapiente officia nihil modi sit ducimus,
+                       possimus ea. Magnam officia ad tempora!</p>
+
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skiils')">Skills</p>
+                           <p class="tab-links" onclick="opentab('Education')">Education</p>
+                           <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                       </div>
+
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JAVA SCRIPT</span></li>
+                            <li><span>BOOTSTRAP</span></li>
+                            <li><span>REACTJS</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>PYTHON</span></li>
+                            <li><span>NODE JS</span></li>
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019-2023</span><br>B-tech at National institute of technology,puducherry</li>
+                            <li><span>2017-2019</span><br>Intermediate at Narayana junior college,kadapa</li>
+                            <li><span>2016-2017</span>Swamy Vivekananda englsih medium high school</li>
+                           
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Current<br></span>Full Stack developer Trainee at Besant technologies at Banglore</li>
+                        </ul>
+                       </div>                
+            </div>
+        </div>
+    </div>
+
+    <!------------------------SERVICES-------------------------------------------------------------------------------------------------------->
+
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="Project-list">
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>         
+                    <h2>Iot based Room light control</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                       adipisicing elit. Esse magnam laboriosam                       
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon clone using Html and CSS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                       adipisicing elit. Esse magnam laboriosam                       
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                
+                <div>
+                    <i class="fa-solid fa-right-to-bracket"></i>               
+                    <h2>CRUD operations using REACTJS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                       adipisicing elit. Esse magnam laboriosam                      
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+                     
+
+                   
+             </div>
+        </div>
+    </div>
+    <!------------------contact----------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>paddualavalapati@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 6305567359</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/padmanabha-reddy-alavalapati-785690237"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/pnr_alavalapati?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/padmanabhareddy.alavalapati.9?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+
+                        
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <a href="images/CV_2023080819221958.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © pnr alavalapati</p>
+
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+           
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    
+    
+    </script>
+
+   
+    
+
+
+
+    
+  
+    
+       
+    
+
+
+
+    
+
+</body>
+</html>
